@@ -5,8 +5,8 @@ Welcome to PIMENTA's documentation!
 
 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`usage` section for further information, and 
+how to :doc:`installation` the project.
 
 .. note::
 
