@@ -18,7 +18,6 @@ Contents
 .. toctree::
 
    installation
-   usage
    primer file
    sample description
    output files
