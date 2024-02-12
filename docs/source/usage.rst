@@ -45,12 +45,13 @@ Modify the following parameters in settingsfile.txt to run the pipeline:
 +--------------------+-----------------------------------------------------------------------+
 | RunModules         | Modules to run.                                                       |
 |                    | Options:                                                              |
-|                    | - all (default)                                                       |
-|                    | - Guppy                                                               |
-|                    | - Clustering                                                          |
-|                    | - Consensus                                                           |
-|                    | - Blast                                                               |
-|                    | - Taxonomy                                                            |
+|                    | all (default)                                                         |
+|                    | , Guppy                                                               |
+|                    | , Clustering                                                          |
+|                    | , Consensus                                                           |
+|                    | , Blast                                                               |
+|                    | , Taxonomy                                                            |
+|                    |                                                                       |
 |                    | Another module called 'oldmode' can also be used, which runs          |
 |                    | the tax identification per sample (instead of per dataset).           |
 |                    | Needs to be used in combination with 'all' or other modules           |
@@ -128,9 +129,36 @@ Tool parameters
 
 Primer file
 ------------
+The primer file is a csv file including primer sequences in the following format: ::
+
+  Target;sequence;forward
+  Target;sequence;reverse
+
+Example:
+::
+   18SV9;GTACACACCGCCCGTC;forward
+   18SV9;TGATCCTTCTGCAGGTTCACCTAC;reverse
+   18SV4;AGGGCAAKYCTGGTGCCAG;forward
+   18SV4;GRCGGTATCTRATCGYCTT;reverse
+
+It is important that the target name is the same name given in the settingsfile.
+
 
 Sample description
 ------------
+IF you want to give names to the different samples, you could create a sample description txt file. 
+It has the following format: ::
+   ##BarcodeID;SampleName
+   barcode01;Sample_1
+   barcode02;Sample_2
+
+
+IF you want to use oldmode, this sampledescription is a requirement and also includes the markers used. 
+example:
+::
+   ##BarcodeID;SampleName;DNAbarcodes
+   barcode03;Mix_1;miniCOI,18SV9,18SV4
+   barcode04;Mix_2;miniCOI,18SV9,18SV4
 
 Output files
 ------------
