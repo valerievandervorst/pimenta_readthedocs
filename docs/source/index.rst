@@ -19,6 +19,4 @@ Contents
 
    installation
    usage
-   primer file
-   sample description
-   output files
+
