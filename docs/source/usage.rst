@@ -2,6 +2,8 @@ Usage
 =====
 
 .. _Usage:
+.. _Parameters:
+
 
 Usage
 ------------
@@ -15,9 +17,13 @@ To run the reclustering and Taxonomic identification: ::
    bash START_recluster.sh settingsfile.txt
 
 
-Modify the following parameters in settingsfile.txt to run the pipeline:</strong><br>
+Parameters
+------------
+Modify the following parameters in settingsfile.txt to run the pipeline:
+
 Main parameters
-  +--------------------+---------------------------------------------------------------+
+
++--------------------+---------------------------------------------------------------+
   | Variable             | Description                                               |
   +====================+===============================================================+
   | RunName              | Run name of the analysis, this will be the name of the output folder. |
@@ -38,6 +44,7 @@ Main parameters
   +--------------------+---------------------------------------------------------------+
 
 File location parameters
+
 +-------------------+-----------------------------------------------------------------------------------+
 | Variable          | Description                                                                       |
 +===================+===================================================================================+
@@ -62,6 +69,7 @@ File location parameters
 
 
 Tool parameters
+
 +---------------+------+------------------------------------------------------------------------------------+
 | Variable      | Tool | Description                                                                        |
 +===============+======+====================================================================================+
