@@ -24,24 +24,24 @@ Modify the following parameters in settingsfile.txt to run the pipeline:
 Main parameters
 
 +--------------------+---------------------------------------------------------------+
-  | Variable             | Description                                               |
-  +====================+===============================================================+
-  | RunName              | Run name of the analysis, this will be the name of the output folder. |
-  +--------------------+---------------------------------------------------------------+
-  | mail-user             | Email address to receive updates about the job and results from the analysis. |
-  +--------------------+---------------------------------------------------------------+
-  | Targets              | Markers to analyze separated with ',', these marker names must correspond to the names in the [primer file](https://git.wur.nl/vorst016/dna-metabarcoding-combined-clustering/-/wikis/4-Primer-file), example: 18SV4,miniCOI |
-  +--------------------+---------------------------------------------------------------+
-  | THREADS              | Total CPU threads per sample.                                 |
-  +--------------------+---------------------------------------------------------------+
-  | GPU                  | GPU usage (only for Guppy basecalling): '1' for using GPU or 'cpu' to run Guppy on CPU. |
-  +--------------------+---------------------------------------------------------------+
-  | timepersample       | Total minutes per sample reserved by slurm.                     |
-  +--------------------+---------------------------------------------------------------+
-  | RunModules           | Modules to run, options: all (default), Guppy, Clustering, Consensus, Blast, Taxonomy.<br> Another module called 'oldmode' can also be used, which runs the tax identification per sample (instead of per dataset). Needs to be used in combination with 'all' or other modules (e.g. "oldmode,clustering,Consensus,Blast,taxonomy") (experimental). |
-  +--------------------+---------------------------------------------------------------+
-  | modus                | "all" to analyze all datasets within OutDir or "one" to analyze dataset with same RunName and OutDir. |
-  +--------------------+---------------------------------------------------------------+
+| Variable             | Description                                               |
++====================+===============================================================+
+| RunName              | Run name of the analysis, this will be the name of the output folder. |
++--------------------+---------------------------------------------------------------+
+| mail-user             | Email address to receive updates about the job and results from the analysis. |
++--------------------+---------------------------------------------------------------+
+| Targets              | Markers to analyze separated with ',', these marker names must correspond to the names in the primer file |
++--------------------+---------------------------------------------------------------+
+| THREADS              | Total CPU threads per sample.                                 |
++--------------------+---------------------------------------------------------------+
+| GPU                  | GPU usage (only for Guppy basecalling): '1' for using GPU or 'cpu' to run Guppy on CPU. |
++--------------------+---------------------------------------------------------------+
+| timepersample       | Total minutes per sample reserved by slurm.                     |
++--------------------+---------------------------------------------------------------+
+| RunModules           | Modules to run, options: all (default), Guppy, Clustering, Consensus, Blast, Taxonomy.<br> Another module called 'oldmode' can also be used, which runs the tax identification per sample (instead of per dataset). Needs to be used in combination with 'all' or other modules (e.g. "oldmode,clustering,Consensus,Blast,taxonomy") (experimental). |
++--------------------+---------------------------------------------------------------+
+| modus                | "all" to analyze all datasets within OutDir or "one" to analyze dataset with same RunName and OutDir. |
++--------------------+---------------------------------------------------------------+
 
 File location parameters
 
