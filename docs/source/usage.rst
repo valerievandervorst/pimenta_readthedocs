@@ -73,11 +73,11 @@ Modify the following parameters in settingsfile.txt to run the pipeline:
 +-------------------+-----------------------------------------------------------------------------------+
 | workdir           | Location of the Pimenta scripts on the HPC server, example: ~/pimenta             |
 +-------------------+-----------------------------------------------------------------------------------+
-| SampleDescription | tsv file containing sample names, see #sample-description                         |
+| SampleDescription | tsv file containing sample names, see :ref:`Sample description`                   |
 +-------------------+-----------------------------------------------------------------------------------+
-| PrimerFile        | file containing marker primers, #primer-file                                      |
+| PrimerFile        | file containing marker primers, see :ref:`Primer file`                            |
 +-------------------+-----------------------------------------------------------------------------------+
-| NT_dmp            | contains nodes.dmp and names.dmp from NCBI  #installation                         |
+| NT_dmp            | contains nodes.dmp and names.dmp from NCBI  :doc:`Installation`                   |
 +-------------------+-----------------------------------------------------------------------------------+
 | DATABASE          | BLAST database, for example: /lustre/shared/wfsr-databases/BLASTdb/nt             |
 +-------------------+-----------------------------------------------------------------------------------+
