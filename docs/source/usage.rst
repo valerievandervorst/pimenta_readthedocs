@@ -8,9 +8,9 @@ Usage
 .. _Output files:
 
 
-Usage
+Running an analysis
 ------------
-The basic command to run the example analysis, after editing the settings in settingsfile.txt: ::
+The basic command to run the analysis, after editing the settings in settingsfile.txt: ::
 
    bash START.sh settingsfile.txt
 
