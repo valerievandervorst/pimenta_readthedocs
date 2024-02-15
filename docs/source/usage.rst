@@ -172,8 +172,8 @@ Beneath is an overview with a short explanation per output.
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
 | barcode*.`SampleName`             | barcode*.`SampleName`.fastq       |                | "raw" reads basecalled and demultiplexed by Guppy                                     |
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
-| barcode*.`SampleName`             | barcode*.`SampleName`.QC.fastq    |                | QC filtered reads in fastq and fasta format                                           |
-|                                   | barcode*.`SampleName`.QC.fasta    |                |                                                                                       |
+| barcode*.`SampleName`             | barcode*.`SampleName`.QC.fastq,   |                | QC filtered reads in fastq and fasta format                                           |
+|                                   | barcode*.`SampleName`.QC.fasta,   |                |                                                                                       |
 |                                   | barcode*.`SampleName`.QC.gd       |                |                                                                                       |
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
 | barcode*.`SampleName`             | ClustCons                         | multi-seq      | folders containing clustering data and cluster fasta files                            |
