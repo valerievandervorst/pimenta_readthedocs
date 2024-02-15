@@ -146,14 +146,14 @@ It is important that the target name is the same name given in the settingsfile.
 
 Sample description
 ------------
-IF you want to give names to the different samples, you could create a sample description txt file. 
+If you want to give names to the different samples, you could create a sample description txt file. 
 It has the following format: ::
    ##BarcodeID;SampleName
    barcode01;Sample_1
    barcode02;Sample_2
 
 
-IF you want to use oldmode, this sampledescription is a requirement and also includes the markers used. 
+If you want to use oldmode, this sampledescription is a requirement and also includes the markers used. 
 example:
 ::
    ##BarcodeID;SampleName;DNAbarcodes
