@@ -187,7 +187,7 @@ Beneath is an overview with a short explanation per output.
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
 | `RunName`.stats.txt               |                                   |                | file containing an overview of the cluster distribution over the different markers    |
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
-| jobscheduler                      | LOGS                              |                |  this folder contains all slurm log files (except Guppy logs)                         |
+| job_scheduler                     | LOGS                              |                |  this folder contains all slurm log files (except Guppy logs)                         |
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
 
 
