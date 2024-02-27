@@ -114,7 +114,9 @@ Tool parameters
 +-----------------+--------+------------------------------------------------------------------------------------+
 | Ident2          |CD-HIT  | Minimum percentage identity for the reclustering with CD-HIT, default=1            |
 +-----------------+--------+------------------------------------------------------------------------------------+
-| MinClustSize    |CD-HIT  | Minimum cluster size                                                               |
+| MinClustSize    |CD-HIT  | Minimum cluster size for first clustering                                          |
++-----------------+--------+------------------------------------------------------------------------------------+
+| MinClustSize2   |CD-HIT  | Minimum cluster size for clusters in reclustering                                 |
 +-----------------+--------+------------------------------------------------------------------------------------+
 | Error           |Cutadapt| Maximum error rate that Cutadapt allows, default=0.15                              |
 +-----------------+--------+------------------------------------------------------------------------------------+
@@ -125,6 +127,8 @@ Tool parameters
 | Qcov            |BLAST   | Minimum Query coverage for filtered BLAST results, default=90                      |
 +-----------------+--------+------------------------------------------------------------------------------------+
 | MaxTargetSeqs   |BLAST   | Maximum amount of hits BLAST outputs per consensus sequence, default=100           |
++-----------------+--------+------------------------------------------------------------------------------------+
+| filtertax       |BLAST   | Keep all results in $filtertax, ex. "Metazoa", leave empty "" to keep everything   |
 +-----------------+--------+------------------------------------------------------------------------------------+
 
 Primer file
@@ -187,7 +191,10 @@ Beneath is an overview with a short explanation per output.
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
 | `RunName`.stats.txt               |                                   |                | file containing an overview of the cluster distribution over the different markers    |
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
+| Taxonomy_per_sample_`Ident2`      |   `Target`                        |                |  folder containining tsv files with taxonomy overview with readcounts per sample      |
++-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
+| Taxonomy_per_sample_`Ident2`      | krona                             |                |  folder containining krona plots per target and sample                                |
++-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
 | job_scheduler                     | LOGS                              |                |  this folder contains all slurm log files (except Guppy logs)                         |
 +-----------------------------------+-----------------------------------+----------------+---------------------------------------------------------------------------------------+
-
 
