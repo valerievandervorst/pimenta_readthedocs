@@ -157,7 +157,7 @@ It has the following format: ::
    barcode02;Sample_2
 
 
-If you want to use oldmode, this sampledescription is a requirement and also includes the markers used. 
+If you want to use oldmode, then this sampledescription is a requirement and also includes the markers used. 
 example:
 ::
    ##BarcodeID;SampleName;DNAbarcodes
