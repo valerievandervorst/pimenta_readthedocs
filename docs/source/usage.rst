@@ -90,7 +90,7 @@ Modify the following parameters in settingsfile.txt to run the pipeline:
 
 
 
-Tool parameters
+**Tool parameters**
 
 +-----------------+--------+------------------------------------------------------------------------------------+
 | Variable        | Tool   | Description                                                                        |
@@ -116,7 +116,7 @@ Tool parameters
 +-----------------+--------+------------------------------------------------------------------------------------+
 | MinClustSize    |CD-HIT  | Minimum cluster size for first clustering                                          |
 +-----------------+--------+------------------------------------------------------------------------------------+
-| MinClustSize2   |CD-HIT  | Minimum cluster size for clusters in reclustering                                 |
+| MinClustSize2   |CD-HIT  | Minimum cluster size for clusters in reclustering                                  |
 +-----------------+--------+------------------------------------------------------------------------------------+
 | Error           |Cutadapt| Maximum error rate that Cutadapt allows, default=0.15                              |
 +-----------------+--------+------------------------------------------------------------------------------------+
