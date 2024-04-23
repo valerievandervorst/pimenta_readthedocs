@@ -33,8 +33,8 @@ Modify the following parameters in settingsfile.txt to run the pipeline:
 +--------------------+-----------------------------------------------------------------------+
 | mail-user          | Email address to receive updates about the slurm job of the analysis. |
 +--------------------+-----------------------------------------------------------------------+
-| Targets            | Markers to analyze separated with ',', these marker names must        |
-|                    | correspond to the names in the primer file                            |
+| Targets            | Markers to analyze separated with ',' , these marker names must       |
+|                    | correspond to the names in the primer file. For example: '18SV4,COI'  |
 +--------------------+-----------------------------------------------------------------------+
 | THREADS            | Total CPU threads per sample.                                         |
 +--------------------+-----------------------------------------------------------------------+
